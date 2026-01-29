@@ -1,0 +1,19 @@
+---
+import styles from "../styles/Navbar.module.css"
+
+const navLink = [
+  { name: "Hombres", href: "/Hombres" },
+  { name: "Mujeres", href: "/Mujeres" },
+  { name: "Ofertas", href: "/Ofertas" },
+];
+---
+
+<nav class={styles.Navbar_container}>
+  <ul class={styles.Navbar_list}>
+    {navLink.map((link) => (
+      <li class={styles.Navbar_item}>
+        <a href={link.href}>{link.name}</a>
+      </li>
+    ))}
+  </ul>
+</nav>

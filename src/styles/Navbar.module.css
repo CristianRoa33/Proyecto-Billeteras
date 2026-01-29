@@ -1,0 +1,17 @@
+.Navbar_container {
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.Navbar_list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.Navbar_item {
+    font-family: var(--font-main);
+    font-size: 1rem;
+}

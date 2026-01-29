@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables globales */
+:root {
+  --color-primary: #111;
+  --color-secondary: #555;
+  --font-main: 'Inter', sans-serif;
+}
+
+/* Estilos base */
+html, body {
+  font-family: var(--font-main);
+  background-color: #f9f9f9;
+  color: var(--color-primary);
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+a:hover {
+  color: var(--color-primary);
+}
