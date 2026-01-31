@@ -1,16 +1,16 @@
 ---
-import Billeteras from '@assets/billeteras.webp';
+import Billeteras from '../assets/billetera.webp';
+import style from '../styles/Hero.module.css';
 ---
 
-<section>
+<section class={style.hero}>
     <img
         src={Billeteras.src}
-        width={1900}
-        height={900}
         alt="Logo Americana Academy"
-    alt="Billeteras"/>
-    <div class="overlay">
+        alt="Billeteras"
+        class={style.heroImg}/>
+    <div class={style.overlay}>
     <h2>Minimalist Wallet</h2>
-    <button>Comprar ahora</button>
+    <button class={style.button}>Comprar ahora</button>
     </div>
 </section>

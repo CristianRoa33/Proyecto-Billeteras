@@ -3,6 +3,9 @@
     justify-content: center;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    padding: 1rem 2rem;
 }
 
 .Navbar_list {
