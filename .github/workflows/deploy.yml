@@ -4,6 +4,11 @@ on:
   push:
     branches: [ master ]   # o main, según tu repo
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
