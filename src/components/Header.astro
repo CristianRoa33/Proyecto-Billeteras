@@ -1,15 +1,17 @@
 ---
 import Navbar from "../shared/Navbar.astro"
 import styles from "../styles/Header.module.css"
-import logo from "../assets/Logo-header.webp"
+import { Image } from "astro:assets"; 
+import logo from "@images/Logo-header.webp";
+
 
 ---
 
 <header class={styles.Header_container}>
-    <div class={styles.Header_main_container}>
+    <nav class={styles.nav_main_container}>
         <a href="/Proyecto-Billeteras/" class="header-logo">
-        <img 
-        src={logo.src} 
+        <Image  
+        src={logo}
         alt="logo"
         loading="eager"
         fetchpriority="high"
@@ -25,7 +27,7 @@ import logo from "../assets/Logo-header.webp"
         <div>
             <a href="">
                 <img 
-                src="" 
+                src="/Proyecto-Billeteras/assets/carrito.webp" 
                 alt="carrito"
                 loading="eager"
                 fetchpriority="high"
@@ -33,7 +35,7 @@ import logo from "../assets/Logo-header.webp"
                 >
             </a>
         </div>
-    </div>
+    </nav>
 </header>
 
 
