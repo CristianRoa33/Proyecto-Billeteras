@@ -1,0 +1,41 @@
+article {
+    background-color: var(--color-card);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.cardImage {
+    width: 21.3rem;
+    height: 27rem;
+    border-radius: 0.5rem;
+}
+
+.cardContent {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "cardTitle" "cardPrice"
+    "cardDescription";
+    gap: 0.1rem;
+    margin-top: 1rem;
+    padding: 0.2rem;
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.cardPrice {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-tertiary);
+}
+
+.cardDescription {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-fifth);
+}

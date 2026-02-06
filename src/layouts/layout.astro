@@ -1,24 +1,21 @@
 ---
 import "../styles/styles.css";
-import Header from "../components/Header.astro";
+const { title } = Astro.props;
+
 ---
 <!DOCTYPE html><html lang="en">
   <head>
 	<meta charset="UTF-8" />		
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />		
-	<title>My Astro Site</title>
+  <meta name="generator" content={Astro.generator} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />		
+	<title> {title} | Mi Tienda</title>
+  <link rel="stylesheet" href="/styles/styles.css" />
   </head>
-    <body>
-        <Header />
-        <main>    
-        <slot />  
-        </main>
+    <body> 
+        <slot />
     </body>
 </html>
-
-
 
 
 

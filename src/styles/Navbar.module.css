@@ -6,6 +6,7 @@
     position: sticky;
     top: 0;
     padding: 1rem 2rem;
+    z-index: 100;
 }
 
 .Navbar_list {
@@ -17,4 +18,5 @@
 .Navbar_item {
     font-family: var(--font-main);
     font-size: 1rem;
+    font-weight: 500;
 }

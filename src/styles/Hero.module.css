@@ -1,29 +1,37 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-Fourth);
+}
 
+.hero img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 15px;
+}
 
 .overlay {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: var(--color-Fourth);
 }
 
 .overlay h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
 }
 
-.overlay button {
-  background: #000;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 4px;
-}
-
-.overlay button:hover {
-  background: #444;
+.overlay .heroText {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
 }

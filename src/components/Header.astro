@@ -1,18 +1,20 @@
 ---
 import Navbar from "../shared/Navbar.astro"
 import styles from "../styles/Header.module.css"
+import logo from "../assets/Logo-header.webp"
 
 ---
 
 <header class={styles.Header_container}>
     <div class={styles.Header_main_container}>
-        <a href="/" class="header-logo">
+        <a href="/Proyecto-Billeteras/" class="header-logo">
         <img 
-        src="" 
+        src={logo.src} 
         alt="logo"
         loading="eager"
         fetchpriority="high"
         decoding="async"
+        class={styles.logo_image}
         >
         </a>
 

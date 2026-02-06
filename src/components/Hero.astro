@@ -1,6 +1,7 @@
 ---
-import Billeteras from '../assets/billetera.webp';
+import Billeteras from '../assets/imagen-hero.webp';
 import style from '../styles/Hero.module.css';
+import Boton from '../shared/botons.astro';
 ---
 
 <section class={style.hero}>
@@ -9,8 +10,10 @@ import style from '../styles/Hero.module.css';
         alt="Logo Americana Academy"
         alt="Billeteras"
         class={style.heroImg}/>
+        
     <div class={style.overlay}>
-    <h2>Minimalist Wallet</h2>
-    <button class={style.button}>Comprar ahora</button>
+    <h2>La esencia de la <em> elegancia</em></h2>
+    <p class={style.heroText}>Descubre nuestra colección exclusiva de billeteras hechas a mano con materiales de alta calidad.</p>
+    <Boton />
     </div>
 </section>

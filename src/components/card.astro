@@ -1,0 +1,15 @@
+---
+const { title, description, price } = Astro.props;
+import billetera from "../assets/billetera.webp";
+import style from "../styles/card.module.css";
+
+---
+
+<article class={style.card}>
+    <img src={billetera.src} alt={title} class={style.cardImage} />
+        <div class={style.cardContent}>
+            <h2 class={style.cardTitle}>{title}</h2>
+            <p class={style.cardPrice}>${price}</p>
+            <p class={style.cardDescription}>{description}</p>
+        </div>
+</article>

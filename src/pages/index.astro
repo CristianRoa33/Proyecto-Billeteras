@@ -1,9 +1,13 @@
 ---
 import Layout from "../layouts/layout.astro";
 import Hero from "../components/Hero.astro";
+import Header from "../components/Header.astro";
+import Curated from "../shared/Curated.astro";
 
 ---
 
-<Layout>
+<Layout title="Inicio">
+    <Header />
     <Hero />
+    <Curated />
 </Layout>
