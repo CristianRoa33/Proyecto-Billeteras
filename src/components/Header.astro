@@ -3,6 +3,7 @@ import Navbar from "../shared/Navbar.astro"
 import styles from "../styles/Header.module.css"
 import { Image } from "astro:assets"; 
 import logo from "@images/Logo-header.webp";
+import carrito from "@images/compras.webp";
 
 
 ---
@@ -25,13 +26,14 @@ import logo from "@images/Logo-header.webp";
         </div>
 
         <div>
-            <a href="">
-                <img 
-                src="/Proyecto-Billeteras/assets/carrito.webp" 
+            <a href="/Proyecto-Billeteras/carrito" class="carrito-link">
+                <Image
+                src={carrito}
                 alt="carrito"
                 loading="eager"
                 fetchpriority="high"
                 decoding="async"
+                class={styles.carrito_image}
                 >
             </a>
         </div>
