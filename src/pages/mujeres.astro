@@ -1,7 +1,102 @@
 ---
 import Layout from "../layouts/layout.astro";
 import Header from "../components/Header.astro";
+import Card  from "../shared/card.astro";
+import styles from "../styles/otraspaginas.module.css";
+import Footer from "../components/footer.astro";
+
+const productosMujeres = [
+  {
+    image: "@images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+
+  {
+   image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+
+  {
+    image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+
+  {
+    image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+
+  {
+    image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+
+  {
+   image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+
+  {
+    image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+
+  {
+    image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+  {
+    image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+
+  {
+    image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+  {
+    image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+  {
+    image: "../assets/images/billetera.webp",
+    title: "Vellum Card Holder",
+    price: 60,
+    description: "Diseño minimalista.",
+  },
+];
 ---
 <Layout title="Mujeres">
     <Header />  
+    <h1 class={styles.mujeres_title}>Mujeres</h1>
+    <section class={styles.mujeres_section}>   
+    <div class={styles.mujeres_cards}>    
+    {productosMujeres.map((p) => (
+      <Card title={p.title} description={p.description} image={p.image} price={p.price} />
+    ))}
+    </div>
+    </section>
+    <Footer />
 </Layout>
