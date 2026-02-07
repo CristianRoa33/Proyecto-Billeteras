@@ -1,0 +1,34 @@
+.curated_section {  
+    margin: 1rem ; 
+}
+.curated_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.curated_title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-tertiary);
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.curated_cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+}

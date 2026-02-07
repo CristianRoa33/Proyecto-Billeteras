@@ -1,5 +1,6 @@
 ---
-import Card  from "../components/card.astro";
+import Card  from "../shared/card.astro";
+import styles from "../styles/curated.module.css";
 
 
 const productosPrincipal = [
@@ -48,9 +49,12 @@ const productosMujeres = [
 
 ---
 
-<section>
-  <h2>Selección destacada</h2>
-  <div class="grid">
+<section class={styles.curated_section}>
+  <div class={styles.curated_header}>
+  <h2 class={styles.curated_title}>Selección destacada</h2> 
+  <a class={styles.link} href="/Proyecto-Billeteras/ofertas">ver más</a>
+  </div>
+  <div class={styles.curated_cards}>
     {productosPrincipal.slice(0, 4).map((p) => (
       <Card title={p.title} description={p.description} image={p.image} price={p.price} />
     ))}

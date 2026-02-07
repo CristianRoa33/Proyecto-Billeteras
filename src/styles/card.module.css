@@ -5,14 +5,14 @@ article {
 }
 
 .cardImage {
-    width: 21.3rem;
-    height: 27rem;
+    width: 26rem;
+    height: 28rem;
     border-radius: 0.5rem;
 }
 
 .cardContent {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 22.5rem 1fr;
     grid-template-areas: 
     "cardTitle" "cardPrice"
     "cardDescription";
@@ -23,7 +23,8 @@ article {
 
 .cardTitle {
     font-size: 1.2rem;
-    font-weight: 550;
+    width: 22.5rem;
+    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
