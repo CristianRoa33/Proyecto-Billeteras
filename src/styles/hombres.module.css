@@ -1,0 +1,17 @@
+.hombres_section {
+    padding: 22px;
+}
+
+.hombres_title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 2rem;
+}
+
+.hombres_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
