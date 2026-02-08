@@ -31,3 +31,19 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+
+.ofertas_title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 2rem;
+}
+
+.ofertas_section {
+    padding: 22px;
+}
+.ofertas_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

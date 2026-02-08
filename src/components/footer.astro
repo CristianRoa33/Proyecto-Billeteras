@@ -1,12 +1,29 @@
 ---
 import styles from "../styles/footer.module.css";
+import { Image } from "astro:assets";
+import instagram from "@images/instagram-icon.svg";
+import email from "@images/gmail.svg";
 ---
 
 <footer class={styles.footer}>
+  <div class={styles.footer_titles}>
+    <p class={styles.footer_shop}>Tienda</p>
+    <p class={styles.footer_services}>Servicios</p>
+    <p class={styles.footer_redes}>nuestras redes</p>
+  </div>
+  <div class={styles.footer_content}>
   <div class={styles.footer_container}>
-    <p class={styles.footer_title}>INFORMACIÓN</p>
-    <button class={styles.footer_link} id="envios-btn">Envíos</button>
+    <a href="/terminos" class={styles.footer_link}>Términos y condiciones</a>
     <a href="/devoluciones" class={styles.footer_link}>Devoluciones</a>
     <a href="/contacto" class={styles.footer_link}>Contacto</a>
+  </div>
+    <div class={styles.footer_container2}>
+      <a href="/nosotros">Nosotros</a>
+      <a href="/politicas">Políticas de privacidad</a>
+    </div>
+    <div class={styles.footer_container3}>
+      <a href="/instagram"><Image src={instagram} alt="Instagram" class={styles.instagram_icon} /></a>
+      <a href="/email"><Image src={email} alt="Email" class={styles.email_icon} /></a>
+    </div>
   </div>
 </footer>
